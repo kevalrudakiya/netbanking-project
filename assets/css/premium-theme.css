@@ -1,0 +1,59 @@
+:root {
+    --bg-dark: #020b19;
+    --bg-card: #041226;
+    --primary-glow: #0072ff;
+    --accent-blue: #00d2ff;
+    --text-main: #ffffff;
+    --text-muted: #53647c;
+    --border-color: #0b2240;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glowing Card container similar to the login portal */
+.secure-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 114, 255, 0.2);
+    padding: 30px;
+}
+
+/* Modern Inputs */
+.form-control {
+    background: #020e21;
+    border: 1px solid var(--border-color);
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-control:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+    outline: none;
+}
+
+/* Glowing Button */
+.btn-glow {
+    background: linear-gradient(135deg, #0072ff 0%, #00d2ff 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+.btn-glow:hover {
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: translateY(-1px);
+}
